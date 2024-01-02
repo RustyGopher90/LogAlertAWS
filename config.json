@@ -1,0 +1,53 @@
+{
+    "minutesToSleep": "5",   
+    "logLocations": [
+        {
+            "emailDelivery" : false,
+            "smsDelivery" : true,
+            "emailConfig": {
+                "recipients": [
+                    "emailToBeAlerted@someDomain.com"
+                ]
+            },
+            "smsConfig": {
+                "phoneNumbers": [
+                    "+1234567890"
+                ],
+                "awsRegion": "us-west-2"
+            },
+            "fileLocation": "C:\\somelocation\\someFile_{{{yyyyMMdd}}}.out.log",
+            "searchTerms": [
+                "error",
+                "warning",
+                "exclusion"
+            ],
+            "ignoreTerms": [
+                "regex [/]"
+            ]
+        },
+        {
+            "emailDelivery" : false,
+            "smsDelivery" : true,
+            "emailConfig": {
+                "recipients": [
+                    "emailToBeAlerted@someDomain.com"
+                ]
+            },
+            "smsConfig": {
+                "phoneNumbers": [
+                    "+1234567890"
+                ],
+                "awsRegion": "us-west-2"
+            },
+            "fileLocation": "C:\\somelocation\\someFile_{{{yyyyMMdd}}}.out.log",
+            "searchTerms": [
+                "error",
+                "warning",
+                "exclusion"
+            ],
+            "ignoreTerms": [
+                "regex [/]"
+            ]
+        }
+    ]
+}
